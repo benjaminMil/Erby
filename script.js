@@ -153,6 +153,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
+      buttons.forEach((btn) => (btn.disabled = true));
+      buttons.forEach((btn) => (btn.style = "border: 1px solid #CAC9CD"));
       if (button.id === "inspire") {
         erby.src = "/images/erby.png";
         handleResponse(inspireMeCopy, inspireMe);
@@ -187,7 +189,8 @@ document.addEventListener("DOMContentLoaded", () => {
     showThinkingAnimation();
     setTimeout(() => {
       if (copyArray.length === 0) {
-        copyArray = [...originalArray];
+        // Instead of reassigning, push all elements from originalArray into copyArray
+        copyArray.push(...originalArray);
       }
       const randomIndex = Math.floor(Math.random() * copyArray.length);
       const response = copyArray.splice(randomIndex, 1)[0];
@@ -218,6 +221,10 @@ document.addEventListener("DOMContentLoaded", () => {
         index++;
       } else {
         clearInterval(typingInterval);
+        buttons.forEach((btn) => (btn.disabled = false));
+        buttons.forEach(
+          (btn) => (btn.style = "border: 1px solid var(--mainColor)")
+        );
       }
     }, 50);
   }

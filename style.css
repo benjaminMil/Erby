@@ -101,7 +101,10 @@ header p {
   font-family: "DynaPuff", system-ui;
   align-self: flex-end;
   margin-left: 0.5rem;
-  color: var(--forthColor);
+  background: linear-gradient(to bottom, var(--thirdColor), var(--forthColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   font-weight: 500;
 }
 
@@ -175,7 +178,7 @@ header p {
   0%,
   50%,
   100% {
-    transform: scale(1.15);
+    transform: scale(1.2);
   }
   25%,
   75% {
