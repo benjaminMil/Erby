@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 img,
@@ -212,4 +212,27 @@ header p {
 
 .option-btn:active {
   transform: scale(0.96);
+}
+
+@media only screen and (max-width: 450px) {
+  body,
+  .option-btn {
+    font-size: 0.85rem;
+  }
+
+  .character {
+    max-width: 70%;
+  }
+
+  @keyframes shadow-scale {
+    0%,
+    50%,
+    100% {
+      transform: scale(1.1);
+    }
+    25%,
+    75% {
+      transform: scale(1);
+    }
+  }
 }
