@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const answerBox = document.getElementById("answer-box");
   const buttons = document.querySelectorAll(".option-btn");
   const soundIcon = document.getElementById("sound");
-  const audio = new Audio("/music/music.wav");
+  const audio = new Audio("music/music.wav");
   audio.loop = true;
   let isPlaying = false;
 
