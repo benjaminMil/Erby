@@ -72,7 +72,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr;
   height: 100vh;
-  overflow: hidden;
+  /*overflow: hidden; */
   font-family: "Oxanium", sans-serif;
   font-size: 1.25rem;
   background-color: var(--secondryColor);
