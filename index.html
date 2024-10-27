@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Erby</title>
+  </head>
+  <body>
+    <header>
+      <div class="logoDiv">
+        <img class="logo" src="/images/logo.png" alt="logo" />
+        <h2 class="logoText">Erby</h2>
+      </div>
+      <!--<p>seek adivce</p> -->
+      <img id="sound" src="/images/speakerOff.svg" alt="sound on/off" />
+    </header>
+    <main class="container">
+      <div id="answer-box">
+        <p>You have come to the right place, what is it you seek?</p>
+      </div>
+      <div class="character">
+        <img id="erby" src="/images/Erby.png" alt="guru" />
+      </div>
+      <div class="shadow">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 10">
+          <ellipse cx="100" cy="5" rx="100" ry="5"></ellipse>
+        </svg>
+      </div>
+
+      <div class="options">
+        <button class="option-btn" id="inspire">Inspire Me</button>
+        <button class="option-btn" id="Advise">Advise Me</button>
+        <button class="option-btn" id="Degrade">Degrade Me</button>
+        <button class="option-btn" id="yes/no">Yes/No</button>
+        <button class="option-btn" id="luckyNum">Lucky Number</button>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
