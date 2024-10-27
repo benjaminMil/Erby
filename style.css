@@ -215,6 +215,12 @@ header p {
 }
 
 @media only screen and (max-width: 450px) {
+  .container {
+    margin: 0 var(--container-margin);
+  }
+  .logo {
+    width: 40px;
+  }
   body,
   .option-btn {
     font-size: 0.85rem;
@@ -236,3 +242,4 @@ header p {
     }
   }
 }
+
