@@ -221,10 +221,10 @@ header p {
   .logo {
     width: 40px;
   }
-  body,
+ /* body,
   .option-btn {
     font-size: 0.85rem;
-  }
+  } */
 
   .character {
     max-width: 70%;
