@@ -156,19 +156,19 @@ document.addEventListener("DOMContentLoaded", () => {
       buttons.forEach((btn) => (btn.disabled = true));
       buttons.forEach((btn) => (btn.style = "border: 1px solid #CAC9CD"));
       if (button.id === "inspire") {
-        erby.src = "/images/erby.png";
+        erby.src = "images/erby.png";
         handleResponse(inspireMeCopy, inspireMe);
       } else if (button.id === "Advise") {
-        erby.src = "/images/erby.png";
+        erby.src = "images/erby.png";
         handleResponse(adviseMeCopy, adviseMe);
       } else if (button.id === "Degrade") {
-        erby.src = "/images/meanErby.png";
+        erby.src = "images/meanErby.png";
         handleResponse(degradeMeCopy, degradeMe);
       } else if (button.id === "yes/no") {
-        erby.src = "/images/erby.png";
+        erby.src = "images/erby.png";
         generateYesNo();
       } else if (button.id === "luckyNum") {
-        erby.src = "/images/erby.png";
+        erby.src = "images/erby.png";
         generateLuckyNumber();
       }
     });
@@ -177,10 +177,10 @@ document.addEventListener("DOMContentLoaded", () => {
   soundIcon.addEventListener("click", () => {
     if (isPlaying) {
       audio.pause();
-      soundIcon.src = "/images/speakerOff.svg";
+      soundIcon.src = "images/speakerOff.svg";
     } else {
       audio.play();
-      soundIcon.src = "/images/speaker.svg";
+      soundIcon.src = "images/speaker.svg";
     }
     isPlaying = !isPlaying;
   });
