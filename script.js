@@ -154,7 +154,10 @@ document.addEventListener("DOMContentLoaded", () => {
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       buttons.forEach((btn) => (btn.disabled = true));
-      buttons.forEach((btn) => (btn.style = "border: 1px solid #CAC9CD"));
+      buttons.forEach((btn) => {
+        btn.style.border = "1px solid #CAC9CD";
+        btn.style.color = "#CAC9CD";
+      });
       if (button.id === "inspire") {
         erby.src = "images/Erby.png";
         handleResponse(inspireMeCopy, inspireMe);
@@ -222,9 +225,10 @@ document.addEventListener("DOMContentLoaded", () => {
       } else {
         clearInterval(typingInterval);
         buttons.forEach((btn) => (btn.disabled = false));
-        buttons.forEach(
-          (btn) => (btn.style = "border: 1px solid var(--mainColor)")
-        );
+         buttons.forEach((btn) => {
+          btn.style.border = "1px solid var(--mainColor)";
+          btn.style.color = "var(--mainColor)";
+        });
       }
     }, 50);
   }
