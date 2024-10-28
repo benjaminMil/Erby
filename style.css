@@ -143,6 +143,9 @@ header p {
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid var(--mainColor);
+  background-color: var(----secondryColor);
+  color: var(--mainColor);
+  appearance: none;
   transition: background-color 0.3s, color 0.3s;
 }
 
