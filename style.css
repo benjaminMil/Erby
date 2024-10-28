@@ -52,7 +52,7 @@ header p {
 }
 
 #sound {
-  max-width: 34px;
+  width: 34px;
   margin-right: 0.5rem;
 }
 /* container styles */
