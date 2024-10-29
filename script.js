@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
         erby.src = "images/Erby.png";
         handleResponse(inspireMeCopy, inspireMe);
       } else if (button.id === "Advise") {
-        erby.src = "images/Erby.png";
+        erby.src = "images/adviceErby.png";
         handleResponse(adviseMeCopy, adviseMe);
       } else if (button.id === "Degrade") {
         erby.src = "images/meanErby.png";
